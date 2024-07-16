@@ -1,3 +1,6 @@
+# This program implements a gRPC service that solves quadratic equations.
+# It consists of a server and a client. The server, implemented in quadratic_server.py, listens for incoming gRPC requests and computes the roots of a quadratic equation based on the coefficients provided by the client. It uses the quadratic formula to determine the roots and returns the result. The client, implemented in quadratic_client.py, connects to the server via a gRPC channel, sends the coefficients of the quadratic equation, and receives the solution. The client then prints the solution, which includes the roots of the equation. The project also involves generating necessary gRPC code from a .proto file that defines the service and message formats used for communication between the client and server.
+
 # Import necessary modules
 from concurrent import futures
 import logging
